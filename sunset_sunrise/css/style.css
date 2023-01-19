@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: peachpuff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+figure{
+    width: 600px;
+    height: 600px;
+    background: lightblue;
+    position: relative;
+    overflow: hidden;
+}
+
+.wave__back--front{
+    width: 600px;
+    height: 100px;
+    background: blue;
+    position: absolute;
+    top: 500px;
+    animation-name: back_wave;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+.wave__backCircle{
+    width: 80px;
+    height: 100px;
+    background-color: lightblue;
+    border-radius: 50%;
+    position: absolute;
+    top: 420px;
+    transform: rotate(10deg);
+    clip-path: polygon(0% 85%, 0% 100%, 100% 100%, 100% 70%);
+    animation-name: back_wave--circle;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.wave__backCircle--first{
+    left: -2%;
+}
+
+.wave__backCircle--second{
+    left: calc(-2% + 50px);
+}
+
+.wave__backCircle--third{
+    left: calc(-2% + 100px)
+}
+
+.wave__backCircle--fourth{
+    left: calc(-2% + 150px)
+}
+
+.wave__backCircle--fifth{
+    left: calc(-2% + 200px)
+}
+
+.wave__backCircle--sixth{
+    left: calc(-2% + 250px)
+}
+
+.wave__backCircle--seventh{
+    left: calc(-2% + 300px)
+}
+
+.wave__backCircle--eigth{
+    left: calc(-2% + 350px)
+}
+
+.wave__backCircle--ninth{
+    left: calc(-2% + 400px)
+}
+
+.wave__backCircle--tenth{
+    left: calc(-2% + 450px)
+}
+
+.wave__backCircle--eleventh{
+    left: calc(-2% + 500px)
+}
+
+.wave__backCircle--twelfth{
+    left: calc(-2% + 550px)
+}
+
+.wave__back--back{
+    width: 600px;
+    height: 100px;
+    background: blue;
+    position: absolute;
+    top: 500px;
+}
+
+@keyframes back_wave{
+    from{
+        top: 500px;
+    }
+    to{
+        top: 400px;
+    }
+}
+
+@keyframes back_wave--circle{
+    from{
+        top: 420px;
+    }
+    to{
+        top: 310px;
+    }
+} 
+
+.fish{
+    width: 10px;
+    height: 10px;
+    background: green;
+}
+
+.wave__front--back{
+    width: 600px;
+    height: 40px;
+    background: rgb(0, 140, 255);
+    position: absolute;
+    top: 560px;
+}
+
+.wave__front--front{
+    width: 600px;
+    height: 40px;
+    background: rgb(0, 140, 255);
+    position: absolute;
+    top: 560px;
+    animation-name: front_wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+ .wave__frontCircle{
+    width: 80px;
+    height: 80px;
+    background: blue;
+    position: absolute;
+    top: 500px;
+    left: -8%;
+    border-radius: 50%;
+    clip-path: polygon(0% 73%, 0% 100%, 100% 100%, 100% 74%);
+    animation-name: front_wave--circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+} 
+
+.wave__frontCircle--first{
+    left: -8%;
+}
+
+.wave__frontCircle--second{
+    left: calc(-8% + 50px);
+}
+
+.wave__frontCircle--third{
+    left: calc(-8% + 100px)
+}
+
+.wave__frontCircle--fourth{
+    left: calc(-8% + 150px)
+}
+
+.wave__frontCircle--fifth{
+    left: calc(-8% + 200px)
+}
+
+.wave__frontCircle--sixth{
+    left: calc(-8% + 250px)
+}
+
+.wave__frontCircle--seventh{
+    left: calc(-8% + 300px)
+}
+
+.wave__frontCircle--eigth{
+    left: calc(-8% + 350px)
+}
+
+.wave__frontCircle--ninth{
+    left: calc(-8% + 400px)
+}
+
+.wave__frontCircle--tenth{
+    left: calc(-8% + 450px)
+}
+
+.wave__frontCircle--eleventh{
+    left: calc(-8% + 500px)
+}
+
+.wave__frontCircle--twelfth{
+    left: calc(-8% + 550px)
+}
+
+.wave__frontCircle--thirteenth{
+    left: calc(-8% + 600px)
+}
+
+ @keyframes front_wave{
+    from{
+        top: 560px;
+    }
+    to{
+        top: 520px;
+    }
+}
+
+@keyframes front_wave--circle{
+    from{
+        top: 500px;
+    }
+    to{
+        top: 460px;
+    }
+} 
+
+.sun{
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(rgb(250, 249, 183), rgb(255, 230, 0));
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px 0 yellow;
+}
+
+.cloud1{
+    height: 100px;
+    width: 150px;
+    background: transparent;
+    position: absolute;
+    top: 10%;
+    left: -30%;
+    animation-name: cloud__one;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+
+.cloud2{
+    height: 100px;
+    width: 150px;
+    background: transparent;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    animation-name: cloud__two;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+
+.cloud3{
+    height: 100px;
+    width: 150px;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    animation-name: cloud__three;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+.cloud4{
+    height: 100px;
+    width: 150px;
+    background: transparent;
+    position: absolute;
+    top: 20%;
+    left: -30%;
+    animation-name: cloud__four;
+    animation-duration: 80s;
+    animation-iteration-count: infinite;
+}
+
+.cloud__ball{
+    height: 60px;
+    width: 60px;
+    background: rgb(237, 247, 248);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.cloud__ball--first{
+    top: 60px;
+    left: 30px;
+}
+
+.cloud__ball--second{
+    top: 30px;
+    left: 60px;
+}
+
+.cloud__ball--third{
+    top: 30px;
+    left: 100px;
+}
+
+.cloud__ball--fourth{
+    top:60px;
+    left: 120px;
+}
+
+.cloud__ball--fifth{
+    top: 70px;
+    left: 75px;
+}
+
+@keyframes cloud__one{
+    from{
+        left: -30%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes cloud__two{
+    from{
+        left: 100%;
+    }
+    to{
+        left: -30%;
+    }
+}
+
+@keyframes cloud__three{
+    from{
+        left: 100%;
+    }
+    to{
+        left: -30%;
+    }
+}
+
+@keyframes cloud__four{
+    from{
+        left: -30%;
+    }
+    to{
+        left: 100%
+    }
+}
+
+.borb{
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    position: absolute;
+    top: 100px;
+    left:100px;
+}
+
+.borb__wing{
+    width: 3px;
+    height: 30px;
+    background-color: black;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:0;
+    
+}
+
+.borb__wing--left{
+    transform: rotate(15deg);
+    left: 8px;
+}
+
+.borb__wing--right{
+    transform: rotate(-15deg);
+    
+}
